@@ -6,7 +6,7 @@
  * Version: 0.1.0
  * Creation Date: 2019/06/21
  */
- 
+
 /*=====[Inclusion of own header]=============================================*/
 
 #include "alumnos.h"
@@ -38,10 +38,10 @@ bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
         "\"documento\":\"%s\","
         "\"apellidos\":\"%s\","
         "\"nombres\":\"%s\""
-    "}";
+        "}";
 
-    resultado = snprintf(cadena, espacio, FORMATO, 
-             alumno->documento, alumno->apellidos, alumno->nombres);
+    resultado = snprintf(cadena, espacio, FORMATO,
+                         alumno->documento, alumno->apellidos, alumno->nombres);
 
     return (resultado >= 0);
 }
@@ -51,6 +51,16 @@ bool AlejandroPermingeat(char* cadena, size_t espacio) {
         .apellidos = "PERMINGEAT",
         .nombres = "Alejandro",
         .documento = "99.999.999",
+    };
+
+    return SerializarAlumno(cadena, espacio, &alumno);
+}
+
+bool EstebanVolentini(char * cadena, size_t espacio) {
+    const struct alumno_s alumno = {
+        .apellidos = "VOLENTINI",
+        .nombres = "Esteban Daniel",
+        .documento = "23.517.968",
     };
 
     return SerializarAlumno(cadena, espacio, &alumno);
