@@ -126,7 +126,6 @@ bool JonathanCagua(char* cadena, size_t espacio) {
     return SerializarAlumno(cadena, espacio, &alumno);
 }
 
-
  bool HernanGomezMolino(char * cadena, size_t espacio) {
        const struct alumno_s alumno = {
            .apellidos = "GOMEZ MOLINO",
