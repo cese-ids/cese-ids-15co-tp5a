@@ -41,6 +41,18 @@ typedef struct alumno_s {
 
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
 
+bool AlejandroPermingeat(char * cadena, size_t espacio);
+
+bool EstebanVolentini(char * cadena, size_t espacio);
+
+bool LeandroArrieta(char * cadena, size_t espacio);
+
+bool CarlosMaffrand(char * cadena, size_t espacio);
+
+bool GonzaloVaca(char * cadena, size_t espacio);
+
+bool MartinRios(char * cadena, size_t espacio);
+
 bool LucasZalazar(char * cadena, size_t espacio);
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/
