@@ -37,10 +37,11 @@
 int main(int argc, char *argv[]) {
     char cadena[128];
 
-    if (FernandoProkopiuk(cadena, sizeof(cadena))) {
+    if (JuniorMonroy(cadena, sizeof(cadena))) {
         printf("Alumno: %s\r\n", cadena);
     } else {
         printf("No se pudo serializar el alumno\r\n");
     }
+
     return 0;
 }
