@@ -45,21 +45,12 @@ bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
 
     return (resultado >= 0);
 }
+
 bool AlejandroPermingeat(char* cadena, size_t espacio) {
     const struct alumno_s alumno = {
         .apellidos = "PERMINGEAT",
         .nombres = "Alejandro",
         .documento = "99.999.999",
-    };
-
-    return SerializarAlumno(cadena, espacio, &alumno);
-}
-
-bool ArmandoSuhuan(char* cadena, size_t espacio) {
-    const struct alumno_s alumno = {
-        .apellidos = "SUHUAN",
-        .nombres = "Armando",
-        .documento = "45577355",
     };
 
     return SerializarAlumno(cadena, espacio, &alumno);
@@ -80,7 +71,7 @@ bool LeandroArrieta(char * cadena, size_t espacio) {
         .apellidos = "ARRIETA",
         .nombres = "Leandro Ezequiel",
         .documento = "29.747.571",
-        };
+    };
 
     return SerializarAlumno(cadena, espacio, &alumno);
 }
@@ -100,7 +91,7 @@ bool CarlosMaffrand(char * cadena, size_t espacio) {
         .apellidos = "MAFFRAND",
         .nombres = "Carlos",
         .documento = "30.840.267",
-        };
+    };
 
     return SerializarAlumno(cadena, espacio, &alumno);
 }
@@ -150,17 +141,17 @@ bool JonathanCagua(char* cadena, size_t espacio) {
            .apellidos = "GOMEZ MOLINO",
            .nombres = "Hernan",
            .documento = "23.468.816",
-       };
+    };
 
-       return SerializarAlumno(cadena, espacio, &alumno);
-   }
+    return SerializarAlumno(cadena, espacio, &alumno);
+}
 
 bool FernandoProkopiuk(char * cadena, size_t espacio) {
     const struct alumno_s alumno = {
         .apellidos = "PROKOPIUK",
         .nombres = "Fernando Andres",
         .documento = "34.868.467",
-        };
+    };
 
     return SerializarAlumno(cadena, espacio, &alumno);
 }
@@ -184,6 +175,17 @@ bool PabloMorzan(char* cadena, size_t espacio) {
 
     return SerializarAlumno(cadena, espacio, &alumno);
 }
+
+bool ArmandoSuhuan(char* cadena, size_t espacio) {
+    const struct alumno_s alumno = {
+        .apellidos = "SUHUAN",
+        .nombres = "Armando",
+        .documento = "45577355",
+    };
+
+    return SerializarAlumno(cadena, espacio, &alumno);
+}
+
 /*=====[Implementations of private functions]================================*/
 
 /*=====[Implementations of private functions]================================*/
